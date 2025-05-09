@@ -1,5 +1,6 @@
 package com.example.serverspringapp;
 
+import com.example.serverspringapp.Model.Employee.Employees;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -7,4 +8,8 @@ import org.springframework.stereotype.Service;
 public class EmployeeService {
     @Autowired
     private EmployeeRepository repository;
+
+    public void save(Employees employees){
+
+    }
 }
