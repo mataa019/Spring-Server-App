@@ -10,6 +10,6 @@ public class EmployeeService {
     private EmployeeRepository repository;
 
     public void save(Employees employees){
-
+         repository.save(employees);
     }
 }
