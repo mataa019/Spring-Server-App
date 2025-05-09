@@ -1,8 +1,7 @@
 package com.example.serverspringapp;
-
 import com.example.serverspringapp.Model.Employee.Employees;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
 
-public interface EmployeeRepository extends JpaRepository<Employees, Long> {
+public interface EmployeeRepository extends CrudRepository<Employees, Long> {
 
 }
