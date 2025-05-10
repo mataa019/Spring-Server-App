@@ -12,14 +12,15 @@ class ServerSpringAppApplicationTests {
      @Autowired
      private EmployeeService employeeService;
 
-     //@Test
+     @Test
      void addEmployee(){
          Employee employee = new Employee();
-         employee.setName("Timo Simwawa");
+         employee.setName("JOHN Mataa");
          employee.setLocation("Kitwe");
+         employee.setBranch("IT");
          employeeService.save(employee);
      }
-     @Test
+   //  @Test
     void DeteleAllEmployee(){
         List<Employee>employees= employeeService.getAllEmployee();
         for(Employee employee : employees){
