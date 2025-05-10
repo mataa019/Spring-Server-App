@@ -22,6 +22,7 @@ class ServerSpringAppApplicationTests {
      }
     void getAllEmployee(){
         List<Employee>employees= employeeService.getAllEmployee();
+        System.out.println(employees);
     }
 
 }
