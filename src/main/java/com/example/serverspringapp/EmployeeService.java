@@ -19,6 +19,7 @@ public class EmployeeService {
     public List<Employees> getAllEmployee(){
         List<Employees> employees= new ArrayList<>();
         Streamable.of(repository.findAll()).forEach(employees::add);
+        return employees;
     }
     public void detele(Employees employees){
         repository.delete(employees);
