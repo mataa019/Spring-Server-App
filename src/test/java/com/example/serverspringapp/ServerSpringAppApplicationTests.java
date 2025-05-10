@@ -1,9 +1,11 @@
 package com.example.serverspringapp;
 
-import com.example.serverspringapp.Model.Employee.Employees;
+import com.example.serverspringapp.Model.Employee.Employee;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.util.List;
 
 @SpringBootTest
 class ServerSpringAppApplicationTests {
@@ -12,14 +14,14 @@ class ServerSpringAppApplicationTests {
 
      @Test
      void addEmployee(){
-         Employees employees = new Employees();
-         employees.setName("John Mataa");
-         employees.setLocation("Lusaka");
-         employees.setBranch("IT");
-         employeeService.save(employees);
+         Employee employee = new Employee();
+         employee.setName("Timo Simwawa");
+         employee.setLocation("Kitwe");
+         employee.setBranch("IT");
+         employeeService.save(employee);
      }
-    @Test
-    void contextLoads() {
+    void getAllEmployee(){
+        List<Employee>employees= employeeService.getAllEmployee();
     }
 
 }
