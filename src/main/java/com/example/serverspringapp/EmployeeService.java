@@ -12,4 +12,7 @@ public class EmployeeService {
     public void save(Employees employees){
          repository.save(employees);
     }
+    public void detel(Employees employees){
+        repository.delete(employees);
+    }
 }
