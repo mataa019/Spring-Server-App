@@ -15,6 +15,8 @@ class ServerSpringAppApplicationTests {
          Employees employees = new Employees();
          employees.setName("John Mataa");
          employees.setLocation("Lusaka");
+         employees.setBranch("IT");
+         employeeService.save(employees);
      }
     @Test
     void contextLoads() {
