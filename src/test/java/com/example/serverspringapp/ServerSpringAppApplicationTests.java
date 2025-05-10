@@ -13,6 +13,8 @@ class ServerSpringAppApplicationTests {
      @Test
      void addEmployee(){
          Employees employees = new Employees();
+         employees.setName("John Mataa");
+         employees.setLocation("Lusaka");
      }
     @Test
     void contextLoads() {
