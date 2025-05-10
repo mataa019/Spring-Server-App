@@ -1,17 +1,15 @@
 package com.example.serverspringapp.Model.Employee;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
 @Table(name = "employee")
-//@Builder
-//@Data
-//@NoArgsConstructor
-//@AllArgsConstructor
+@Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
